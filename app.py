@@ -28,3 +28,12 @@ print(rating)
 full_name = 'George Harrison'
 age = 20
 is_new_student = True
+
+# input method
+name = input('What is your name? ')
+print('Hi ' + name + '!')
+# Task 3. Extend this program and ask the person's name and favorite food.
+# Then print a message using that data. E.G.
+# "Hi I am Augusto and my favorite food is fish".
+favorite_food = input('What is your favorite food? ')
+print('Hi, my name is ' +name + ' and my favorite food is ' +favorite_food + '.')
