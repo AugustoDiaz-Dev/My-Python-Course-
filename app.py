@@ -86,4 +86,13 @@ print(message)
 msg = f'{first} [{last}] is a coder'
 print(msg)
 
-
+# String methods
+course = 'Python for Beginners.'
+print(len(course)) # len() & print() are general purpose functions
+print(course.upper()) # upper() method
+print(course) # the original string doesn't change
+print(course.lower())
+print(course.find('P')) # gives you the index
+print(course.find('O')) # find() is case sensitive. Here it will return -1
+print(course.replace('Beginners', 'Absolute Beginners'))
+print('Python' in course) # boolean expression
