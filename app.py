@@ -51,3 +51,29 @@ print(type(weight_in_kilograms))
 weight_in_pounds = int(weight_in_kilograms) * 2.2046
 print(weight_in_pounds)
 
+# simple, double and triple quotes.
+course = "Python's for beginners"
+print(course)
+# triple quotes
+message = '''
+Hi John
+Welcome to our Python Course. 
+Thanks for your support. 
+'''
+print(message)
+# Index
+my_course = "Scratch for beginners"
+print(my_course[0])
+print(my_course[-2])
+print(my_course[0:3])
+print(my_course[0:])
+print(my_course[1:])
+print(my_course[:5])
+print(my_course[:]) # You can copy or clone your string
+another_course = my_course[:]
+
+# Task 5. What happens in this scenario?
+name = 'Anna'
+print(name[1:-1]) # Returns nn
+
+
