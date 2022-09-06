@@ -33,6 +33,10 @@ is_new_student = True
 name = input('What is your name? ')
 print('Hi ' + name + '!')
 # Task 3. Extend this program and ask the person's name and favorite food.
+# Then print a message using that data. E.G.
+# "Hi I am Augusto and my favorite food is fish".
+favorite_food = input('What is your favorite food? ')
+print('Hi, my name is ' +name + ' and my favorite food is ' +favorite_food + '.')
 
 # Calculate age from the birth year. int() float() str() bool()
 birth_year = input('Birth year: ')
@@ -46,7 +50,4 @@ weight_in_kilograms = input('Weight: ')
 print(type(weight_in_kilograms))
 weight_in_pounds = int(weight_in_kilograms) * 2.2046
 print(weight_in_pounds)
-# Then print a message using that data. E.G.
-# "Hi I am Augusto and my favorite food is fish".
-favorite_food = input('What is your favorite food? ')
-print('Hi, my name is ' +name + ' and my favorite food is ' +favorite_food + '.')
+
