@@ -76,4 +76,14 @@ another_course = my_course[:]
 name = 'Anna'
 print(name[1:-1]) # Returns nn
 
+# Formatted strings  f'{}'
+# this code works but is not optimal
+first =  'Augusto'
+last = 'Diaz'
+message = first + ' [' + last + '] is a coder'
+print(message)
+# The same code using formatted strings
+msg = f'{first} [{last}] is a coder'
+print(msg)
+
 
