@@ -96,3 +96,21 @@ print(course.find('P')) # gives you the index
 print(course.find('O')) # find() is case sensitive. Here it will return -1
 print(course.replace('Beginners', 'Absolute Beginners'))
 print('Python' in course) # boolean expression
+
+# Arithmetic Operations
+print(10 + 5)
+print(10 - 5)
+print(10 * 5)
+print(10 / 3)
+print(10 // 3)
+print(10 % 3)
+print(10 ** 3)
+# using augmented assignment operator
+x = 10
+x = x + 3
+print(x)
+x += 3
+x -= 3
+print(x)
+
+
