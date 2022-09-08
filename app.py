@@ -127,3 +127,18 @@ print(z)
 # exponentiation 2 ** 3
 # multiplication or division
 # addition or subtraction
+
+# Math functions
+import math # math module
+# built in functions
+x = 2.9
+print(round(x))
+print(abs(-2.9)) # always returns the positive representation of that value
+
+print(math.ceil(x))
+print(math.floor(x))
+
+# check out the docs for more methods: https://docs.python.org/3/library/math.html
+
+
+# useful python modules: Math
