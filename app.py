@@ -113,4 +113,17 @@ x += 3
 x -= 3
 print(x)
 
-
+#Operator precedence
+w = 10 + 3 * 2
+print(w)
+x = 10 + 3 * 2 * 2 ** 2
+print(x)
+y = (10  + 3) * 2 ** 2
+print(y)
+z = (2 + 3) * 10 - 3
+print(z)
+# Order of precedence:
+# parenthesis
+# exponentiation 2 ** 3
+# multiplication or division
+# addition or subtraction
