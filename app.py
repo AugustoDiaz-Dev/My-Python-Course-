@@ -232,5 +232,18 @@ else:
     converted = weight / 0.45
     print(f'Your weight is {converted} pounds.')
     
-    
+# While loops
+i = 1
+while i <= 5:
+    print(i)
+    i = i + 1
+print("Done!")
+
+i = 0
+while i <= 5:
+    print('*' * i)
+    i = i + 1
+print("Done!")
+
+
 # useful python modules: Math
