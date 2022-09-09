@@ -220,4 +220,17 @@ elif name >= 50:
 else:
     print("Name looks good!")
     
+# Project Weight Converter
+# Show to the student the final program and then they should write by themselves
+weight = int(input("Weight: "))
+lbs_or_kg = input("(L)bs or (K)g: ")
+result = 0;
+if lbs_or_kg.upper() == 'L':
+    converted = weight * 0.45
+    print(f'Your weight is {converted} kilos.')
+else:
+    converted = weight / 0.45
+    print(f'Your weight is {converted} pounds.')
+    
+    
 # useful python modules: Math
