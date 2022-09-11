@@ -257,5 +257,24 @@ while guess_count < guess_limit:
         break
 else:
     print('Sorry, you failed.')
+    
+# Car game
+command = ""
+while True:
+    command = input("> ").lower()
+    if command == "start":
+        print("Car started...")
+    elif command == "stop":
+        print("Car stopped.")
+    elif command == 'help':
+        print("""
+start - to stat the car
+stop - to stop the car
+quit - to quit
+        """)
+    elif command == "quit":
+        break
+    else:
+        print("Sorry, I don't understand that!")
 
 # useful python modules: Math
