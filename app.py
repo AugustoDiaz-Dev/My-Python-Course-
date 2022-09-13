@@ -305,3 +305,22 @@ total = 0
 for price in prices:
     total += price
 print(f'Total: $ {total}')
+
+# Nested loops
+for x in range(4):
+    for y in range(3):
+        print(f'{x}, {y}')
+# Task 9. Draw a F shape with nested loops.
+numbers = [5,2,5,2,2]
+for x_count in numbers:
+    output = ''
+    for count in range(x_count):
+        output += 'x'
+    print(output)
+# Task 10 modify the numbers to print an L.
+numbers = [2,2,2,6]
+for x_count in numbers:
+    output = ''
+    for count in range(x_count):
+        output += 'x'
+    print(output)
