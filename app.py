@@ -387,5 +387,14 @@ for number in numbers:
         uniques.append(number)
 print(uniques)
 
+# Tuples ().
+# They are inmutable.
+my_numbers = (1,2,3)
+print(my_numbers[0])
+print(my_numbers)
 
+# Unpacking
+coordinates = (1,2,3)
+x, y, z = coordinates
+print(y)
    
