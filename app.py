@@ -286,5 +286,22 @@ quit - to quit
     else:
         print("Sorry, I don't understand that!")
 
+# For loops
+for item in 'Python':
+    print(item)
 
-# useful python modules: Math
+for item in ['John', 'Paul', 'Ringo', 'George']:
+    print(item)
+
+for item in [1,2,3,4,5]:
+    print(item)
+
+for item in range(1, 10, 2): # This is an object
+    print(item)
+
+# Task 8. Calculate the total cost of our shopping cart.
+prices = [10, 20, 30];
+total = 0
+for price in prices:
+    total += price
+print(f'Total: $ {total}')
