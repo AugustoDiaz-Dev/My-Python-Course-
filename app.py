@@ -363,3 +363,29 @@ print(matrix[0][1])
 for row in matrix:
     for item in row:
         print(item)
+
+ # List methods
+numbers = [5,2,1,7,4,6, 5]
+numbers.append(20)
+numbers.insert(0, 10)
+numbers.remove(4)
+# numbers.clear()
+numbers.pop()
+print(numbers.index(7))
+print(50 in numbers)
+print(numbers.count(5))
+numbers.sort()
+numbers.reverse()
+print(numbers)
+numbers2 = numbers.copy()
+print(numbers2)
+# Task 12. Write a program to remove the duplicates in a list.
+numbers = [2,4,4,6,6,6,8,8,8,8]
+uniques = []
+for number in numbers:
+    if number not in uniques:
+        uniques.append(number)
+print(uniques)
+
+
+   
