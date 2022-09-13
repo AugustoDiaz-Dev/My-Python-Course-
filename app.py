@@ -324,3 +324,22 @@ for x_count in numbers:
     for count in range(x_count):
         output += 'x'
     print(output)
+
+# Lists.
+# When you use square brackets it returns a new list. The original is not modified.
+names = ["Peter", "Bruce", "Sarah", "Mary", "Augusto"]
+print(names)
+print(names[0])
+print(names[-2])
+print(names[2:])
+print(names[2:4])
+print(names[:])
+names[0] = 'Pe'
+print(names)
+# Task 11. Write a program to find the largest number in a list.
+numbers_list = [3,6,2,8,4, 10]
+max = numbers[0]
+for number in numbers_list:
+    if number > max:
+        max = number
+print(max)
