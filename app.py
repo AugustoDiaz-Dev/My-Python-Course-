@@ -460,3 +460,16 @@ def greet_user(name, last_name):
 print("Start")
 greet_user("Augusto", "Diaz")
 print("Finish")
+
+
+# Keyword arguments
+# If you are dealing with numerical values without not a clear explanation of what they represent use keyword arguments.
+# Keyword arguments should always go after a positional argument.
+def greet_user(name, last_name):
+    print(f"Hi {name} {last_name}!")
+    print("Welcome aboard")
+
+
+print("Start")
+greet_user(last_name="Diaz", name="Augusto")
+print("Finish")
