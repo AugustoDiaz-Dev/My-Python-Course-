@@ -398,3 +398,44 @@ coordinates = (1,2,3)
 x, y, z = coordinates
 print(y)
    
+# Dictionaries - key value pairs
+customer = {
+    "name": "Augusto Diaz",
+    "age": 39,
+    "is_verified": True
+}
+customer["name"] = 'Augusto Roberto Diaz'
+customer["is_new"] = True
+print(customer["name"]) # If there is not match returns an error
+print(customer.get("age")) # If there is not match returns None
+print(customer.get("birth_date", "June 11 1983"))
+print(customer)
+# Task 13. Phone number converter
+phone_number = input("Phone: ")
+digits = {
+    "0": "zero",
+    "1": "one",
+    "2": "two",
+    "3": "three",
+    "4": "four",
+    "5": "five",
+    "6": "six",
+    "7": "seven",
+    "8": "eight",
+    "9": "nine"
+}
+output = ""
+for number in phone_number:
+    output += digits.get(number, "!") + " "
+print(output)
+# Emoji converter :) with dictionaries
+message = input("> ")
+words = message.split(' ')
+emojis = {
+    ":)": "😄",
+    ":(": "☹"
+}
+output = ""
+for word in words:
+    output += emojis.get(word, word) + " "
+print(output)
