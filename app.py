@@ -497,3 +497,19 @@ def emoji_converter(message):
 message = input("> ")
 print(emoji_converter(message))
 
+
+# Exceptions
+# They are used to handle exceptions that are raised in our programs
+try:
+    age = int(input('Age: '))
+    income = 20000
+    risk = income / age
+    print(age)
+except ZeroDivisionError:
+    print("Age cannot be 0.")
+except ValueError:
+    print("Invalid value.")
+
+# Comments
+# This line is going to be ignored because is a comment
+print("Sky is blue")
