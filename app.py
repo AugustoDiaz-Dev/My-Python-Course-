@@ -534,3 +534,30 @@ point1.draw()
 point2 = Point()
 point2.x = 1
 print(point2.x)
+
+# Constructors
+# The constructor is a function that gets called at the time of creating an object.
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+    def move(self):
+        print("Move")
+
+    def draw(self):
+        print("Draw")
+
+
+point = Point(10, 20,)
+point.x = 11
+print(point.x)
+# Task 14. Define a class Person with name and talk()
+class Person:
+    def __init__(self, name):
+        self.name = name
+    def talk(self):
+        print(f'Hi, I am {self.name}.')
+
+
+augusto = Person('Augusto Diaz')
+augusto.talk()
