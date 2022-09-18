@@ -12,6 +12,7 @@ print('  |  ')
 print('  |  ')
 print('  |  ')
 
+
 # Variables (identifier, assignation, value)
 price = 10
 price = 20
@@ -29,6 +30,7 @@ full_name = 'George Harrison'
 age = 20
 is_new_student = True
 
+
 # input method
 name = input('What is your name? ')
 print('Hi ' + name + '!')
@@ -37,6 +39,7 @@ print('Hi ' + name + '!')
 # "Hi I am Augusto and my favorite food is fish".
 favorite_food = input('What is your favorite food? ')
 print('Hi, my name is ' +name + ' and my favorite food is ' +favorite_food + '.')
+
 
 # Calculate age from the birth year. int() float() str() bool()
 birth_year = input('Birth year: ')
@@ -50,6 +53,7 @@ weight_in_kilograms = input('Weight: ')
 print(type(weight_in_kilograms))
 weight_in_pounds = int(weight_in_kilograms) * 2.2046
 print(weight_in_pounds)
+
 
 # simple, double and triple quotes.
 course = "Python's for beginners"
@@ -76,6 +80,7 @@ another_course = my_course[:]
 name = 'Anna'
 print(name[1:-1]) # Returns nn
 
+
 # Formatted strings  f'{}'
 # this code works but is not optimal
 first =  'Augusto'
@@ -85,6 +90,7 @@ print(message)
 # The same code using formatted strings
 msg = f'{first} [{last}] is a coder'
 print(msg)
+
 
 # String methods
 course = 'Python for Beginners.'
@@ -96,6 +102,7 @@ print(course.find('P')) # gives you the index
 print(course.find('O')) # find() is case sensitive. Here it will return -1
 print(course.replace('Beginners', 'Absolute Beginners'))
 print('Python' in course) # boolean expression
+
 
 # Arithmetic Operations
 print(10 + 5)
@@ -113,6 +120,7 @@ x += 3
 x -= 3
 print(x)
 
+
 #Operator precedence
 w = 10 + 3 * 2
 print(w)
@@ -128,6 +136,7 @@ print(z)
 # multiplication or division
 # addition or subtraction
 
+
 # Math functions
 import math # math module
 # built in functions
@@ -139,6 +148,7 @@ print(math.ceil(x))
 print(math.floor(x))
 
 # check out the docs for more methods: https://docs.python.org/3/library/math.html
+
 
 # Conditions
 is_hot = False
@@ -231,7 +241,8 @@ if lbs_or_kg.upper() == 'L':
 else:
     converted = weight / 0.45
     print(f'Your weight is {converted} pounds.')
-    
+ 
+
 # While loops
 i = 1
 while i <= 5:
@@ -245,6 +256,7 @@ while i <= 5:
     i = i + 1
 print("Done!")
 
+
 # Guessing Game
 secret_number = 9
 guess_count = 0
@@ -257,6 +269,7 @@ while guess_count < guess_limit:
         break
 else:
     print('Sorry, you failed.')
+    
     
 # Car game
 command = ""
@@ -286,6 +299,7 @@ quit - to quit
     else:
         print("Sorry, I don't understand that!")
 
+        
 # For loops
 for item in 'Python':
     print(item)
@@ -306,6 +320,7 @@ for price in prices:
     total += price
 print(f'Total: $ {total}')
 
+
 # Nested loops
 for x in range(4):
     for y in range(3):
@@ -325,6 +340,7 @@ for x_count in numbers:
         output += 'x'
     print(output)
 
+    
 # Lists.
 # When you use square brackets it returns a new list. The original is not modified.
 names = ["Peter", "Bruce", "Sarah", "Mary", "Augusto"]
@@ -343,6 +359,7 @@ for number in numbers_list:
     if number > max:
         max = number
 print(max)
+
 
 # 2D lists
 '''
@@ -364,6 +381,7 @@ for row in matrix:
     for item in row:
         print(item)
 
+        
  # List methods
 numbers = [5,2,1,7,4,6, 5]
 numbers.append(20)
@@ -392,6 +410,7 @@ print(uniques)
 my_numbers = (1,2,3)
 print(my_numbers[0])
 print(my_numbers)
+
 
 # Unpacking
 coordinates = (1,2,3)
@@ -440,6 +459,7 @@ for word in words:
     output += emojis.get(word, word) + " "
 print(output)
 
+
 # Functions
 def greet_user():
     print("Hi there!")
@@ -474,12 +494,14 @@ print("Start")
 greet_user(last_name="Diaz", name="Augusto")
 print("Finish")
 
+
 # Return statement
 def square(number):
     return number * number
 result = square(3)
 print(result)
 print(square(4))
+
 
 # Creating a reusable function
 def emoji_converter(message):
@@ -510,9 +532,11 @@ except ZeroDivisionError:
 except ValueError:
     print("Invalid value.")
 
+    
 # Comments
 # This line is going to be ignored because is a comment
 print("Sky is blue")
+
 
 # Classes
 # The class is the blueprint for creating new objects.
@@ -534,6 +558,7 @@ point1.draw()
 point2 = Point()
 point2.x = 1
 print(point2.x)
+
 
 # Constructors
 # The constructor is a function that gets called at the time of creating an object.
@@ -561,6 +586,7 @@ class Person:
 
 augusto = Person('Augusto Diaz')
 augusto.talk()
+
 
 # Inheritance
 class Mammal:
