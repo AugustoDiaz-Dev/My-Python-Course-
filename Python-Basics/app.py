@@ -652,3 +652,26 @@ class Dice:
 
 dice = Dice()
 print(dice.roll())
+
+
+# Files and directories
+from pathlib import Path
+
+# Absolute path: c:\Program Files\Microsoft
+# Relative path:
+
+path = Path("ecommerce")
+print(path.exists())
+
+# path = Path("emails")
+# print(path.mkdir())
+
+# path = Path("emails")
+# print(path.rmdir())
+
+path = Path()
+for file in path.glob('*.py', ):
+    print(file)
+
+# Pypi and pip
+# https://pypi.org/
