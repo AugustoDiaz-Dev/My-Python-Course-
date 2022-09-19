@@ -626,3 +626,29 @@ print(maximum)
 from ecommerce import shipping
 
 shipping.calc_shipping()
+
+
+# Generating random values with built-in module
+# https://docs.python.org/3/py-modindex.html
+import random
+
+for i in range(3):
+    print(random.random())
+
+for i in range(3):
+    print(random.randint(10, 20))
+
+members = ["Augusto", "Elena", "Igor", "Diana"]
+leader = random.choice(members)
+print(leader)
+# Task 16. Write a program that roll a dice so, every time we run the program we get different values.
+import random
+class Dice:
+    def roll(self):
+        first = random.randint(1,6)
+        second = random.randint(1, 6)
+        return first, second
+
+
+dice = Dice()
+print(dice.roll())
