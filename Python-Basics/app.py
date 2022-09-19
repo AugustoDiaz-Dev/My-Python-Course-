@@ -604,3 +604,25 @@ class Cat(Mammal):
 
 dog1 = Dog()
 dog1.walk()
+
+
+# Modules
+# We use modules to better organize our code breaking the code in multiple files.
+import converters
+from converters import kg_to_lbs
+
+kg_to_lbs(75)
+
+print(converters.kg_to_lbs(75))
+# Task 15. Write a function called find_max and that function should take a list and return the largest number.
+# Put that function in a separate module called utils
+from utils import find_max
+
+numbers = [10, 3, 6, 2]
+maximum = find_max(numbers)
+print(maximum)
+
+# Packages
+from ecommerce import shipping
+
+shipping.calc_shipping()
